@@ -8,11 +8,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import ProductItem from '@/components/ProductItem.vue';
 
-  @Component({
-    props: ['products'],
-    components: {
-      ProductItem,
-    },
-  })
+@Component({
+  props: {
+    products: Array,
+  },
+  components: {
+    ProductItem,
+  },
+})
 export default class ProductList extends Vue {}
 </script>

@@ -126,7 +126,12 @@ export default {
       currentColor: '',
     };
   },
-  props: ['priceFrom', 'priceTo', 'categoryId', 'color'],
+  props: {
+    priceFrom: Number,
+    priceTo: Number,
+    categoryId: Number,
+    color: String,
+  },
   computed: {
     categories() {
       return categories;
